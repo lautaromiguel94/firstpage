@@ -86,7 +86,8 @@ rgba(0,0,0,0.5)
 
 }
 #hero h1{
-    color:white
+    color:white;
+    font-size: 5em;
 }
 #hero button{
     font-size: 1.6em;
@@ -122,31 +123,7 @@ padding: 50px;
 margin: 12px;
 border-radius: 15px;
 }
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-)
-,url("media/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png");
-}
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-)
-,url("media/full-stack-development.png");
-}
-.carta:nth-child(3)
-{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-        )
-,url("media/python-programming-language.png");
-}
+
 #caracteristicas .container{
     text-align: center;
 padding: 250px 12px;
@@ -203,19 +180,115 @@ padding-right: 20px;
 }
 #somos-proya .container{
     display: flex;
+    justify-content: center;
 }
 #somos-proya .texto{
     width: 50%;
+    max-width: 600px;
     text-align: initial;
-    padding: 
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#somos-proya h2{
+    margin-top: 0px;
+
+
 }
 #somos-proya .img-container{
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ), url(media/persona-5-wallpaper.jpg)
-    )
+    ), url("media/hombre-joven-pelo-negro-que-demuestra-algo-computadora-portatil-brillante_231208-2322.avif");
+    background-size:cover;
+    background-position: 500px;
+    height: 500px;
+    width: 400px;
+
 }
+#nuestros-programas .programas{
+    display: flex;
+    justify-content: center;
+}
+#nuestros-programas p{
+    display: block;
+    margin-bottom: 30px;
+}
+#nuestros-programas h2{
+    font-size: 4em;
+}
+#nuestros-programas h3{
+    margin: top 0px;
+}
+#nuestros-programas .carta{
+padding: 15px;
+background-size: 100% 150px;
+background-repeat: no-repeat;
+background-position-y: 0;
+background-color: rgb(50,50,50);
+box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+)
+,url("media/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+)
+,url("media/full-stack-development.png");
+}
+.carta:nth-child(3)
+{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+,url("media/python-programming-language.png");
+}
+#caracteristicas{
+background-image: url("media/Programming_code.jpg");
+background-repeat:no-repeat;
+background-size: 500px 400px;
+background-position: calc(100vw - 500px) 120px;
+
+}
+#caracteristicas .container{
+    text-align: initial;
+
+}
+#caracteristicas ul{
+    margin-left: 100px;
+
+}
+#final h2{
+font-size: 5em;
+}
+#final button{
+    font-size: 2em;
+
+}
+footer .container{
+    justify-content: flex-end;
+
+}
+
+}
+@media(min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+        
+    }
 
 }
